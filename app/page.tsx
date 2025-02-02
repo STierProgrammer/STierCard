@@ -58,7 +58,7 @@ export default function Home() {
               <div className="relative">
                 <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-white/20">
                   <Image
-                    src="/stp.png"
+                    src="/STP.png"
                     alt="Profile"
                     className="w-full h-full object-cover"
                     width={0}

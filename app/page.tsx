@@ -3,7 +3,11 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github, Youtube } from "lucide-react";
+import {
+  SiGithub as Github,
+  SiDiscord as Discord,
+  SiYoutube as Youtube,
+} from "react-icons/si";
 import Image from "next/image";
 
 export default function Home() {
@@ -32,7 +36,7 @@ export default function Home() {
           className="fixed inset-0 flex items-center justify-center bg-black text-white text-2xl font-bold cursor-pointer"
           onClick={enterSite}
         >
-          Click to Enter
+          <h1 className="text-5xl font-sans">Click to enter</h1>
         </div>
       ) : (
         <>
@@ -53,8 +57,8 @@ export default function Home() {
             </video>
           </div>
 
-          <Card className="relative z-20 w-[400px] backdrop-blur-md bg-slate-800/40 border-white/20 text-white p-8">
-            <div className="flex flex-col items-center space-y-6">
+          <Card className="relative z-20 w-[400px] backdrop-blur-md bg-slate-800/50 border-white/20 text-white p-10">
+            <div className="flex flex-col items-center space-y-4">
               <div className="relative">
                 <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-white/20">
                   <Image
@@ -67,8 +71,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="text-center space-y-2">
-                <h1 className="text-2xl font-bold  text-cyan-400">
+              <div className="text-center space-y-1">
+                <h1 className="text-2xl font-bold text-sky-400">
                   STierProgrammer
                 </h1>
                 <p className="text-sm text-gray-300">
@@ -90,6 +94,13 @@ export default function Home() {
                   className="bg-white/5 hover:bg-white/10 border-white/10"
                 >
                   <Youtube className="w-4 h-4" />
+                </Button>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="bg-white/5 hover:bg-white/10 border-white/10"
+                >
+                  <Discord className="w-4 h-4" />
                 </Button>
               </div>
             </div>
